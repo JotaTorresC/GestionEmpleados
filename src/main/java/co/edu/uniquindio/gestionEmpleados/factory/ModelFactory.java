@@ -45,10 +45,6 @@ public class ModelFactory {
         gestionEmpleado.getListaEmpleadoAsignado().add(tecnico2);
         gestionEmpleado.getListaEmpleadoAsignado().add(tecnico3);
         gestionEmpleado.getListaEmpleadoDepartamento().add(gerente);
-        /*empleadosDepartamento.add(tecnico2);
-        empleadoAsignado.add(tecnico1);
-        empleadoAsignado.add(tecnico3);
-        empleadoAsignado.add(tecnico1);*/
         tecnico1.contribuir();
         gerente.contribuir();
     }
@@ -58,4 +54,7 @@ public class ModelFactory {
     public void cantidadEmpleadosProyecto() {
         gestionEmpleado.cantidadEmpleadosProyecto();
     }
+    public  void actualizarDatos(){gestionEmpleado.actualizarDatos();}
+    public void eliminarDatos(){gestionEmpleado.eliminarDatos();}
+    public  void crearEmpleado(){gestionEmpleado.crearEmpleado();}
 }
